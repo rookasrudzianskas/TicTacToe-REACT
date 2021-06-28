@@ -3,7 +3,15 @@ import './App.css';
 function App() {
   return (
     <div className="app">
-      <h1>Tic Tac Toe</h1>
+      <div className="wrapper">
+          <div className="left">
+
+          </div>
+
+          <div className="right">
+
+          </div>
+      </div>
     </div>
   );
 }
