@@ -6,9 +6,11 @@ function App() {
       <div className="wrapper">
           <div className="left">
               <h1>
-                  Let's play <br/> the Tic-tac-toe <br/> game
+                  Let's play <br/> the Tic-tac-toe <br/> Game!
               </h1>
           </div>
+
+          <div className="restart">Start a New Game</div>
 
           <div className="right">
 
