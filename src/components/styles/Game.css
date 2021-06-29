@@ -29,5 +29,5 @@
 }
 
 .board-tile:not(:nth-child(3n)) {
-
+    border-right: 3px solid rgba(137,163, 189, 0.6);
 }
