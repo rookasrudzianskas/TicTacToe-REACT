@@ -12,13 +12,15 @@ const Game = () => {
 
             tiles.forEach((tile) => {
                 tile.addEventListener("click", () => {
-                    console.log("Clicked")
+                    onTileClick(tile.dataset.index);
                 })
             })
 
             function onTileClick(i) {
                 // do something in here
-
+                // make a move
+                game.makeMove(i);
+                gameView.updateBoard(game);
             }
 
         }, [gameView]);
