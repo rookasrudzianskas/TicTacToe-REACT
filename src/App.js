@@ -5,8 +5,9 @@ import GameView from "./GameView.js";
 
 function App() {
 
-    const restart = () => {
-        let game = new GameConsole();
+    const restart = (e) => {
+        window.location.reload();
+        // let game = new GameConsole();
     }
   return (
     <div className="app">
