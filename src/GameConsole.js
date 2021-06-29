@@ -20,9 +20,10 @@ export default class Game {
             return;
         }
         this.board[i] = this.turn;
+        this.findWinningCombinations();
     }
 
-    findWinningCombination() {
+    findWinningCombinations() {
         const winningCombinations = [
             [0,1,2],
             [3,4,5],
@@ -33,6 +34,10 @@ export default class Game {
             [0,4,8],
             [6,4,2],
         ]
+
+        for(const combination of winningCombinations) {
+            console.log(combination)
+        }
     }
 
 }
