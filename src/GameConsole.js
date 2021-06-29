@@ -43,8 +43,8 @@ export default class Game {
                 (this.board[a] === this.board[b] && this.board[a] === this.board[c])) {
                     return combination;
                 }
-            return null;
         }
+            return null;
     }
 
 }
