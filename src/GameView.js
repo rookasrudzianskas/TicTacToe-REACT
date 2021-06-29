@@ -11,7 +11,7 @@ export default class GameView {
             // this looper per all the board
             // we select all the board tiles, but the one which has index 0
             const tile = document.querySelector(`.board-tile[data-index='${i}']`);
-            console.log(tile)
+            tile.textContent = game.board[i];
 
         }
     }
