@@ -12,4 +12,9 @@ export default class GameView {
 
         }
     }
+
+    updateTurn(game) {
+        let playerX = document.querySelector(".player-x")
+        let player0 = document.querySelector(".player-o")
+    }
 }
