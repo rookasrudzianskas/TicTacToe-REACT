@@ -48,4 +48,10 @@
     border-bottom: 3px solid rgba(137,163, 189, 0.6);
 }
 
+.board-tile:hover {
+    background-color: #eeeeee;
+    transition: all 0.25s ease-in-out;
+    cursor: default;
+}
+
 
