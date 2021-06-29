@@ -4,6 +4,18 @@
     font-size: 24px;
 }
 
+.player-x {
+    flex: 1;
+    border-bottom: 5px solid #eee;
+    padding-bottom: 8px;
+}
+
+.player-o {
+    flex: 1;
+    border-bottom: 5px solid #eee;
+    padding-bottom: 8px;
+}
+
 .game {
     width: 500px;
     height: 500px;
@@ -35,4 +47,5 @@
 .board-tile:not(:nth-last-child(-n + 3)) {
     border-bottom: 3px solid rgba(137,163, 189, 0.6);
 }
+
 

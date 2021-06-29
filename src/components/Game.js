@@ -10,7 +10,7 @@ const Game = () => {
                 </div>
 
                 <div className="player-o">
-                    <span>Player Y</span>
+                    <span>Player 0</span>
                 </div>
             </div>
             <div className="board">
