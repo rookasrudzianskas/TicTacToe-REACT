@@ -7,6 +7,17 @@ const Game = () => {
         let game = new GameConsole();
         let gameView = new GameView();
 
+        useEffect(() => {
+            let tiles = document.querySelectorAll('.board-tile');
+
+            tiles.forEach((tile) => {
+                console.log("This is tile", tile)
+                tile.addEventListener("click", () => {
+                    console.log("Clicked")
+                })
+            })
+        }, [gameView]);
+
 
     return (
         <div className="game">
