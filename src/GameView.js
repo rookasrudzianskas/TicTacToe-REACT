@@ -9,6 +9,7 @@ export default class GameView {
         for(let i = 0; i < game.board.length; i++) {
             console.log(game.board[i]);
             // this looper per all the board
+            const tile = document.querySelector('.board-tile[data-index="0"]');
         }
     }
 }

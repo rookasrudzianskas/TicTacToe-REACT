@@ -27,18 +27,18 @@ const Game = () => {
                 </div>
             </div>
             <div className="board">
-                <div className="board-tile">X</div>
-                <div className="board-tile">0</div>
-                <div className="board-tile">X</div>
-                <div className="board-tile">0</div>
-                <div className="board-tile">X</div>
-                <div className="board-tile">0</div>
-                <div className="board-tile">X</div>
-                <div className="board-tile">0</div>
-                <div className="board-tile">X</div>
+                <div className="board-tile" data-index="0"></div>
+                <div className="board-tile" data-index="1"></div>
+                <div className="board-tile" data-index="2"></div>
+                <div className="board-tile" data-index="3"></div>
+                <div className="board-tile" data-index="4"></div>
+                <div className="board-tile" data-index="5"></div>
+                <div className="board-tile" data-index="6"></div>
+                <div className="board-tile" data-index="7"></div>
+                <div className="board-tile" data-index="8"></div>
             </div>
         </div>
-    );
+    )
 };
 
 export default Game;
