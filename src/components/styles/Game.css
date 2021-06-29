@@ -31,3 +31,7 @@
 .board-tile:not(:nth-child(3n)) {
     border-right: 3px solid rgba(137,163, 189, 0.6);
 }
+
+.board-tile:not(:nth-last-child(-n + 3)) {
+    border-bottom: 3px solid rgba(137,163, 189, 0.6);
+}
