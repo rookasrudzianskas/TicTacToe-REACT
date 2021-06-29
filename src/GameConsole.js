@@ -20,7 +20,8 @@ export default class Game {
             return;
         }
         this.board[i] = this.turn;
-        this.findWinningCombinations();
+        let winningCombination = this.findWinningCombinations();
+        console.log("This is winner", winningCombination);
     }
 
     findWinningCombinations() {
@@ -38,11 +39,11 @@ export default class Game {
         for(const combination of winningCombinations) {
             const [a, b, c] = combination;
 
-            if(this.board[a]) {
-                if (this.board[a] === this.board[b] && this.board[a] === this.board[c]) {
+            if(this.board[a] &&
+                (this.board[a] === this.board[b] && this.board[a] === this.board[c])) {
                     return combination;
                 }
-            }
+            return null;
         }
     }
 
