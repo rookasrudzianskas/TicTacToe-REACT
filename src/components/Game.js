@@ -23,17 +23,19 @@ const Game = () => {
                 gameView.updateBoard(game);
             }
 
+            gameView.updateBoard(game);
+
         }, [gameView]);
 
 
     return (
         <div className="game">
             <div className="header">
-                <div className="player-x active">
+                <div className="player-x">
                     <span>Player X</span>
                 </div>
 
-                <div className="player-o active">
+                <div className="player-o">
                     <span>Player 0</span>
                 </div>
             </div>

@@ -19,5 +19,15 @@ export default class GameView {
         let playerX = document.querySelector(".player-x");
         let player0 = document.querySelector(".player-o");
 
+        if(game.turn === "X") {
+            player0.classList.remove('active');
+            playerX.classList.add('active');
+        } else {
+            playerX.classList.remove('active');
+            player0.classList.add('active');
+        }
+
+
+
     }
 }
