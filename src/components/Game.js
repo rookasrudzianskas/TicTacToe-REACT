@@ -11,11 +11,16 @@ const Game = () => {
             let tiles = document.querySelectorAll('.board-tile');
 
             tiles.forEach((tile) => {
-                console.log("This is tile", tile)
                 tile.addEventListener("click", () => {
                     console.log("Clicked")
                 })
             })
+
+            function onTileClick(i) {
+                // do something in here
+
+            }
+
         }, [gameView]);
 
 
