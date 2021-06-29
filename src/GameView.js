@@ -10,7 +10,8 @@ export default class GameView {
             console.log(game.board[i]);
             // this looper per all the board
             // we select all the board tiles, but the one which has index 0
-            const tile = document.querySelector(".board-tile[data-index='0']");
+            const tile = document.querySelector(`.board-tile[data-index='${i}']`);
+            console.log(tile)
 
         }
     }
