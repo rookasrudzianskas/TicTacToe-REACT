@@ -29,11 +29,11 @@ const Game = () => {
     return (
         <div className="game">
             <div className="header">
-                <div className="player-x">
+                <div className="player-x active">
                     <span>Player X</span>
                 </div>
 
-                <div className="player-o">
+                <div className="player-o active">
                     <span>Player 0</span>
                 </div>
             </div>

@@ -19,7 +19,5 @@ export default class GameView {
         let playerX = document.querySelector(".player-x");
         let player0 = document.querySelector(".player-o");
 
-        console.log(playerX);
-        console.log(player0);
     }
 }

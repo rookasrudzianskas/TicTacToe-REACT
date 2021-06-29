@@ -10,10 +10,20 @@
     padding-bottom: 8px;
 }
 
+.player-x.active {
+    color: #42Bed7;
+    border-color: #42Bed7;
+}
+
 .player-o {
     flex: 1;
     border-bottom: 5px solid #eee;
     padding-bottom: 8px;
+}
+
+.player-o.active {
+    color: #d7bafb;
+    border-color: #d7bafb;
 }
 
 .game {
