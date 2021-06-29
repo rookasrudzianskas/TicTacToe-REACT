@@ -6,7 +6,10 @@ const Game = () => {
 
     useEffect(() =>  {
         let game = new GameConsole();
-        console.log("My turn is", game.turn);
+        console.log(game.board);
+        game.makeMove(3);
+        console.log(game.board);
+
     }, []);
 
 

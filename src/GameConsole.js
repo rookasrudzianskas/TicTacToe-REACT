@@ -15,6 +15,7 @@ export default class Game {
     }
 
     makeMove(i) {
+        // and puts something in here
         // defines the position
         this.board[i] = this.turn;
 
