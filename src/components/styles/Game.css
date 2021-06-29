@@ -12,9 +12,18 @@
 }
 
 .board {
+    background-color: orange;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3, 1fr);
     flex-grow: 1;
     grid-gap: 0px;
+    padding: 10px;
+}
+
+.board-tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
 }
