@@ -12,6 +12,8 @@ export default class GameView {
             // this looper per all the board
             // we select all the board tiles, but the one which has index 0
             const tile = document.querySelector(`.board-tile[data-index='${i}']`);
+
+            tile.classList.remove("tile-winner");
             tile.textContent = game.board[i];
 
             // we will add these classes to the individual letters
