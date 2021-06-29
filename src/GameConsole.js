@@ -36,7 +36,11 @@ export default class Game {
         ]
 
         for(const combination of winningCombinations) {
-            console.log(combination)
+            const [a, b, c] = combination;
+
+            console.log(a);
+            console.log(b);
+            console.log(c);
         }
     }
 
