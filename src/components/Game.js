@@ -21,7 +21,6 @@ const Game = () => {
                 // make a move
                 game.makeMove(i);
                 gameView.updateBoard(game);
-                game.nextTurn();
             }
 
         }, [gameView]);

@@ -22,6 +22,9 @@ export default class Game {
         this.board[i] = this.turn;
         let winningCombination = this.findWinningCombinations();
         console.log("This is winner", winningCombination);
+        if(!winningCombination) {
+            this.nextTurn();
+        }
     }
 
     findWinningCombinations() {
