@@ -9,7 +9,8 @@ const Game = () => {
         console.log(game.board);
         game.makeMove(3);
         console.log(game.board);
-
+        game.makeMove(8);
+        console.log(game.board);
     }, []);
 
 
