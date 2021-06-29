@@ -4,18 +4,15 @@ import GameConsole from "../../src/GameConsole.js";
 import GameView from "../GameView.js";
 const Game = () => {
 
-    useEffect(() =>  {
         let game = new GameConsole();
         console.log(game.board);
         game.makeMove(3);
         console.log(game.board);
         game.makeMove(8);
         console.log(game.board);
-    }, []);
 
-    useEffect(() =>  {
         let gameView = new GameView();
-    }, [])
+        gameView.updateBoard(game);
 
 
     return (
