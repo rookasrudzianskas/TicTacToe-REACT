@@ -2,6 +2,10 @@ import React from 'react';
 import "./styles/Game.css";
 
 const Game = () => {
+
+
+
+
     return (
         <div className="game">
             <div className="header">
