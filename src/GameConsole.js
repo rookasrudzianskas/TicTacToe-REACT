@@ -14,6 +14,10 @@ export default class Game {
     }
 
     makeMove(i) {
+
+        if(this.endOfGame()) {
+            return;
+        }
         // and puts something in here
         // defines the position
         if(this.board[i]) {
@@ -48,6 +52,16 @@ export default class Game {
                 }
         }
             return null;
+    }
+
+    endOfGame() {
+        let winningCombination = this.findWinningCombinations();
+
+        if(winningCombination) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
