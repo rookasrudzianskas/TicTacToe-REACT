@@ -1,7 +1,13 @@
 import './App.css';
 import Game from "./components/Game";
+import GameConsole from "./GameConsole.js"
+import GameView from "./GameView.js";
 
 function App() {
+
+    const restart = () => {
+        let game = new GameConsole();
+    }
   return (
     <div className="app">
       <div className="wrapper">
@@ -9,7 +15,7 @@ function App() {
               <h1>
                   Let's play <br/> the Tic-tac-toe <br/> Game!
               </h1>
-          <div className="restart">Start a New Game</div>
+          <div className="restart" onClick={restart}>Start a New Game</div>
           </div>
 
 
