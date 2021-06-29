@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "./styles/Game.css";
+import GameConsole from "../../src/GameConsole.js";
 
 const Game = () => {
 
-    let array = ["X", "0", "X", "", "", "", "", "", ""];
+    useEffect(() =>  {
+        let game = new GameConsole();
+    }, []);
 
 
     return (
