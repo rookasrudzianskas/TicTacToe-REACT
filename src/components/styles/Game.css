@@ -27,3 +27,7 @@
     font-size: 80px;
     background-color: white;
 }
+
+.board-tile:not(:nth-child(3n)) {
+
+}
