@@ -38,7 +38,11 @@ export default class Game {
         for(const combination of winningCombinations) {
             const [a, b, c] = combination;
 
-
+            if(this.board[a]) {
+                if (this.board[a] === this.board[b] && this.board[a] === this.board[c]) {
+                    return combination;
+                }
+            }
         }
     }
 
