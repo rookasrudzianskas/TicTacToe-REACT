@@ -14,5 +14,11 @@ export default class Game {
         }
     }
 
+    makeMove(i) {
+        // defines the position
+        this.board[i] = this.turn;
+
+    }
+
 }
 
