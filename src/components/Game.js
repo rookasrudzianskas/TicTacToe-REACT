@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import "./styles/Game.css";
 import GameConsole from "../../src/GameConsole.js";
-
+import GameView from "../GameView.js";
 const Game = () => {
 
     useEffect(() =>  {
@@ -12,6 +12,10 @@ const Game = () => {
         game.makeMove(8);
         console.log(game.board);
     }, []);
+
+    useEffect(() =>  {
+        let gameView = new GameView();
+    }, [])
 
 
     return (
