@@ -3,7 +3,7 @@ import "./styles/Game.css";
 
 const Game = () => {
 
-
+    let array = ["X", "0", "X", "", "", "", "", "", ""];
 
 
     return (
