@@ -8,9 +8,9 @@ function App() {
               <h1>
                   Let's play <br/> the Tic-tac-toe <br/> Game!
               </h1>
+          <div className="restart">Start a New Game</div>
           </div>
 
-          <div className="restart">Start a New Game</div>
 
           <div className="right">
 
