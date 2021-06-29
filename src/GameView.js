@@ -6,6 +6,8 @@ export default class GameView {
 
         this.updateTurn(game);
 
+        const winningCombination = game.findWinningCombinations();
+
         for(let i = 0; i < game.board.length; i++) {
             // this looper per all the board
             // we select all the board tiles, but the one which has index 0
@@ -16,6 +18,10 @@ export default class GameView {
             let tileType = game.board[i] === 'X' ? "tile-x" : 'tile-0';
 
             tile.innerHTML = `<span class="${tileType}">${game.board[i] ? game.board[i] : ""}</span>`
+
+            if(winningCombination && winningCombination.includes(i)) {
+                tile.classList.add("tile-winner");
+            }
         }
     }
 
