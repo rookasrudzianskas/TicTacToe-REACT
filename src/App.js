@@ -1,4 +1,5 @@
 import './App.css';
+import Game from "./components/Game";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
 
 
           <div className="right">
-
+                <Game />
           </div>
       </div>
     </div>
