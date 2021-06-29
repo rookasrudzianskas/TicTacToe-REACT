@@ -4,6 +4,8 @@ export default class GameView {
 
     updateBoard(game) {
 
+        this.updateTurn(game);
+
         for(let i = 0; i < game.board.length; i++) {
             // this looper per all the board
             // we select all the board tiles, but the one which has index 0
@@ -14,7 +16,10 @@ export default class GameView {
     }
 
     updateTurn(game) {
-        let playerX = document.querySelector(".player-x")
-        let player0 = document.querySelector(".player-o")
+        let playerX = document.querySelector(".player-x");
+        let player0 = document.querySelector(".player-o");
+
+        console.log(playerX);
+        console.log(player0);
     }
 }
