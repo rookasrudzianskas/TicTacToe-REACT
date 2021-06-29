@@ -1,3 +1,20 @@
 .header {
+    display: flex;
+    color: #9a9a9a;
+    font-size: 24px;
+}
 
+.game {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    flex-grow: 1;
+    grid-gap: 0px;
 }
